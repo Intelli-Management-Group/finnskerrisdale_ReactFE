@@ -2,7 +2,10 @@ import { useSite } from '../../hooks/useSite';
 
 export default function Footer() {
   const { settings } = useSite();
-  const text = (settings.copyright_text || 'Copyright © {year} Finns Kerrisdale Ladies. All Rights Reserved.').replace('{year}', new Date().getFullYear());
+  const currentYear = String(new Date().getFullYear());
+  const text = (settings.copyright_text || 'Copyright © {year} Finns Kerrisdale Ladies. All Rights Reserved.')
+    .replace(/\{year\}/g, currentYear)
+    .replace(/(©\s*)\d{4}/, `$1${currentYear}`);
   const social = Array.isArray(settings.social_links) ? settings.social_links.filter((s) => s?.url) : [];
 
   return (
