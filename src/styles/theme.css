@@ -281,11 +281,13 @@ p { margin: 0 0 18px; }
   list-style: none;
 }
 .brand-tile {
+  --brand-tile-highlight: #dddddd;
   position: relative;
   min-height: 96px;
   text-align: center;
   color: var(--color-text);
 }
+.brand-tile.is-active { --brand-tile-highlight: #65308f; }
 .brand-tile a {
   position: relative;
   display: flex;
@@ -300,21 +302,20 @@ p { margin: 0 0 18px; }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(#65308f, #65308f) left top / 3px 32px,
-    linear-gradient(#65308f, #65308f) left top / 32px 3px,
-    linear-gradient(#65308f, #65308f) right top / 3px 32px,
-    linear-gradient(#65308f, #65308f) right top / 32px 3px,
-    linear-gradient(#65308f, #65308f) left bottom / 3px 32px,
-    linear-gradient(#65308f, #65308f) left bottom / 32px 3px,
-    linear-gradient(#65308f, #65308f) right bottom / 3px 32px,
-    linear-gradient(#65308f, #65308f) right bottom / 32px 3px;
+    linear-gradient(var(--brand-tile-highlight), var(--brand-tile-highlight)) left top / 3px 32px,
+    linear-gradient(var(--brand-tile-highlight), var(--brand-tile-highlight)) left top / 32px 3px,
+    linear-gradient(var(--brand-tile-highlight), var(--brand-tile-highlight)) right top / 3px 32px,
+    linear-gradient(var(--brand-tile-highlight), var(--brand-tile-highlight)) right top / 32px 3px,
+    linear-gradient(var(--brand-tile-highlight), var(--brand-tile-highlight)) left bottom / 3px 32px,
+    linear-gradient(var(--brand-tile-highlight), var(--brand-tile-highlight)) left bottom / 32px 3px,
+    linear-gradient(var(--brand-tile-highlight), var(--brand-tile-highlight)) right bottom / 3px 32px,
+    linear-gradient(var(--brand-tile-highlight), var(--brand-tile-highlight)) right bottom / 32px 3px;
   background-repeat: no-repeat;
   content: '';
-  opacity: 0;
+  opacity: 1;
   transition: opacity 0.3s;
   pointer-events: none;
 }
-.brand-tile.is-active a::before { opacity: 1; }
 .brand-tile img {
   display: block;
   max-width: 100%;
