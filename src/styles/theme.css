@@ -197,6 +197,22 @@ p { margin: 0 0 18px; }
   line-height: 1.9;
   text-align: center;
 }
+
+.page-home .home-content {
+  color: #888888;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.page-home .home-content p,
+.page-home .home-content li,
+.page-home .home-content span,
+.page-home .home-content strong,
+.page-home .home-content em {
+  color: #888888;
+  font-size: 14px;
+}
+
 .fkl-intro p:last-child {
   font-family: var(--font-display);
   color: var(--color-accent);
