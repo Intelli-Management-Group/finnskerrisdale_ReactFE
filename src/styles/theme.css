@@ -333,6 +333,7 @@ p { margin: 0 0 18px; }
   color: var(--color-accent);
   font-size: 13px;
 }
+.contact-details p.cd-no-bottom-space { margin-bottom: 0; }
 .contact-details p.cd-tight { margin-bottom: 2px; }
 .contact-details .cd-label { display: inline-block; min-width: 68px; }
 .contact-details a { color: var(--color-accent); }
@@ -347,9 +348,9 @@ p { margin: 0 0 18px; }
 .contact-form-wrap { max-width: 750px; margin-top: 30px; }
 
 /* ------------------------------------------------------------------ forms */
-.subscribe { margin-top: 16px; }
+.subscribe { margin-top: 16px; margin: 2rem 0;}
 .subscribe-title {
-  margin: 16px 0 16px;
+  margin: 16px 0 6px;
   /* font-size: 14px; */
   font-size: 12px;
   color: #333333 !important;
@@ -358,7 +359,7 @@ p { margin: 0 0 18px; }
 }
 .subscribe .subscribe-title { font-family: var(--font-body); }
 .subscribe-text { margin-bottom: 12px; font-size: 14px; color: #888 !important; }
-.field-label, .form-row label { display: block; margin-bottom: 4px; color: var(--color-heading); font-weight: 600; }
+.field-label, .form-row label { display: block; margin-bottom: 4px; color: var(--color-heading); font-weight: 600; display: none;}
 .required { color: #ea0d23; margin-left: 2px; }
 
 input[type='text'], input[type='email'], input[type='tel'], textarea {

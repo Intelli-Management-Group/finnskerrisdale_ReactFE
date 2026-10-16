@@ -8,10 +8,10 @@ export default function ContactDetails() {
   return (
     <div className="contact-details">
       {s.address && (
-        <p><span className="cd-label">Address:</span> <span className="cd-value">{s.address}</span></p>
+        <p className="cd-no-bottom-space"><span className="cd-label">Address:</span> <span className="cd-value">{s.address}</span></p>
       )}
       {s.phone && (
-        <p><span className="cd-label">Phone:</span> <a className="cd-value" href={`tel:${tel}`}>{s.phone}</a></p>
+        <p className="cd-no-bottom-space"><span className="cd-label">Phone:</span> <a className="cd-value" href={`tel:${tel}`}>{s.phone}</a></p>
       )}
       {s.email && (
         <p className="cd-tight"><span className="cd-label">E-mail:</span> <a className="cd-value" href={`mailto:${s.email}`}>{s.email}</a></p>
