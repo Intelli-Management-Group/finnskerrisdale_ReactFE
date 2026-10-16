@@ -78,7 +78,7 @@ p { margin: 0 0 18px; }
   padding: 0 calc(var(--gutter) / 2);
 }
 
-.site { display: flex; flex-direction: column; min-height: 100vh; }
+.site { display: flex; flex-direction: column; }
 .site-main { flex: 1; padding: 0px 0 10px; }
 
 /* ------------------------------------------------------------------ header */
@@ -578,10 +578,12 @@ input[aria-invalid='true'] { border-color: #ea0d23; }
 .site-footer {
   margin-top: 30px;
   border-top: 1px solid var(--color-border-light);
-  background: #fff;
+  background: var(--color-accent-dark);
+  padding: 2px 0;
+  margin: 30px 0 0 0 !important;
 }
-.footer-inner { padding: 18px 15px; text-align: center; }
-.copyright { margin: 0; color: #999; font-size: 12px; }
+.footer-inner { text-align: center; }
+.copyright { margin: 0; color: #fff; font-size: 10px; }
 .footer-social { display: flex; justify-content: center; gap: 16px; margin: 0 0 8px; padding: 0; list-style: none; }
 
 /* ------------------------------------------------------------------ states */

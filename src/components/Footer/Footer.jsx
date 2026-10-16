@@ -10,7 +10,7 @@ export default function Footer() {
 
   return (
     <footer className="site-footer">
-      <div className="container footer-inner">
+      <div className="footer-inner">
         {social.length > 0 && (
           <ul className="footer-social">
             {social.map((s) => (
