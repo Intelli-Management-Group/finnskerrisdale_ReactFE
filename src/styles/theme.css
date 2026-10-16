@@ -37,7 +37,6 @@ body {
   font-family: var(--font-body);
   font-size: 13px;
   line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
 }
 
 img { max-width: 100%; height: auto; border: 0; vertical-align: middle; }
