@@ -59,11 +59,7 @@ export default function BrandGrid({ brands = [] }) {
               key={b.id}
               className={`brand-tile${(activeBrand.id === b.id || activeBrandId === b.id) ? ' is-active' : ''}`}
               onMouseEnter={() => setActiveBrandId(b.id)}
-              onMouseLeave={() => setActiveBrandId(null)}
               onFocus={() => setActiveBrandId(b.id)}
-              onBlur={(event) => {
-                if (!event.currentTarget.contains(event.relatedTarget)) setActiveBrandId(null);
-              }}
             >
               {b.website_url ? (
                 <a href={b.website_url} target="_blank" rel="noopener noreferrer" title={`Visit ${b.name}`}>{tile}</a>
